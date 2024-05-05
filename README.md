@@ -1,4 +1,4 @@
-# Distributed Inference For LLM
+# Distributed Inference For LLM💻
 Run LLMs using distributed GPU architecture
 
 
