@@ -68,6 +68,11 @@ Advanced guides:
 - Launch a private swarm: [guide](https://github.com/bigscience-workshop/petals/wiki/Launch-your-own-swarm)
 - Run a custom model: [guide](https://github.com/bigscience-workshop/petals/wiki/Run-a-custom-model-with-Petals)
 
+Our results in comparison to other SOTA models currently:
+
+![MMLU Score](https://github.com/DataScience-ArtificialIntelligence/Distributed_Inference_For_LLM/assets/67003156/9b9149b8-581b-4855-a9d4-aea895eb00e1)
+
+
 --------------------------------------------------------------------------------
 
 
