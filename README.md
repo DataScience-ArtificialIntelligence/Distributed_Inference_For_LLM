@@ -24,9 +24,9 @@ print(tokenizer.decode(outputs[0]))  # A cat sat on a mat...
 
 - You load a small part of the model, and host a private swarm, and then others can join the network 
 
-<p align="center">
-    <img src="https://i.imgur.com/a/XBj5ueg" width="800">
-</p>
+
+![image](https://github.com/DataScience-ArtificialIntelligence/Distributed_Inference_For_LLM/assets/114015823/b63dbb54-e0ca-45b0-87c0-fefe2f8e86e7)
+
 
 How to use:
 
