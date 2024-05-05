@@ -4,6 +4,32 @@ Run LLMs using distributed GPU architecture
 
 Generate text with distributed **Llama 3** , **Falcon** (40B+), **BLOOM** (176B) (or their derivatives), and fine‑tune them for your own tasks &mdash; right from your desktop computer or Google Colab:
 
+🐧 **Linux + Anaconda.** Run these commands for NVIDIA GPUs (or follow [this](https://github.com/bigscience-workshop/petals/wiki/Running-on-AMD-GPU) for AMD):
+
+```bash
+conda install pytorch pytorch-cuda=11.7 -c pytorch -c nvidia
+pip install git+https://github.com/bigscience-workshop/petals
+python -m petals.cli.run_server petals-team/StableBeluga2
+```
+
+🪟 **Windows + WSL.** Follow [this guide](https://github.com/bigscience-workshop/petals/wiki/Run-Petals-server-on-Windows) on our Wiki.
+
+🐋 **Docker.** Run our [Docker](https://www.docker.com) image for NVIDIA GPUs (or follow [this](https://github.com/bigscience-workshop/petals/wiki/Running-on-AMD-GPU) for AMD):
+
+```bash
+sudo docker run -p 31330:31330 --ipc host --gpus all --volume petals-cache:/cache --rm \
+    learningathome/petals:main \
+    python -m petals.cli.run_server --port 31330 petals-team/StableBeluga2
+```
+
+🍏 **macOS + Apple M1/M2 GPU.** Install [Homebrew](https://brew.sh/), then run these commands:
+
+```bash
+brew install python
+python3 -m pip install git+https://github.com/bigscience-workshop/petals
+python3 -m petals.cli.run_server petals-team/StableBeluga2
+```
+## How to Do a sample inference
 ```python
 from transformers import AutoTokenizer
 from petals import AutoDistributedModelForCausalLM
